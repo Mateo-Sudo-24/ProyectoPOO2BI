@@ -5,17 +5,17 @@ import Controladores.GestionUsuarios;
 public class Main {
     public static void main(String[] args) {
         // Gestionar Propiedades
-        GestionPropiedades gestionPropiedades = new GestionPropiedades("local");
+        GestionPropiedades gestionPropiedades = new GestionPropiedades("Atlas");
         gestionPropiedades.registrarPropiedad("Calle 123", 200000.0, "Casa", "Juan Pérez");
         gestionPropiedades.cerrarConexion();
 
         // Gestionar Contratos
-        GestionContratos gestionContratos = new GestionContratos("atlas");
+        GestionContratos gestionContratos = new GestionContratos("MongoAtlas" );
         gestionContratos.registrarContrato("propiedadId1", "usuarioId1", "2025-01-16", "2025-12-16");
         gestionContratos.cerrarConexion();
 
         // Gestionar Usuarios
-        GestionUsuarios gestionUsuarios = new GestionUsuarios("local");
+        GestionUsuarios gestionUsuarios = new GestionUsuarios("MongoAtlas" );
         gestionUsuarios.registrarUsuario("Pedro", "pedro@mail.com", "12345");
         gestionUsuarios.cerrarConexion();
     }

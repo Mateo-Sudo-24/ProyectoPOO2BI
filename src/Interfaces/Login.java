@@ -10,14 +10,5 @@ public class Login {
     private JTextField TFLPassword;
     private JTextField TFLUsuario;
 
-    public Login(JPanel frame) {
-        ingresarButtonLogin.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                frame.setContentPane(new MenuPrincipal(frame).PanelPrincipal );
-                frame.validate();
-                frame.repaint();
-            }
-        });
-    }
+
 }

@@ -1,11 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="@localhost" uuid="eb9b9e48-9669-4c18-bc60-afaa8686c762">
+    <data-source source="LOCAL" name="@localhost" uuid="58036d49-c7a6-4d34-8e29-46f7b25a50a8">
       <driver-ref>mongo</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.dbschema.MongoJdbcDriver</jdbc-driver>
       <jdbc-url>mongodb://localhost:27017</jdbc-url>
+      <jdbc-additional-properties>
+        <property name="com.intellij.clouds.kubernetes.db.host.port" />
+        <property name="com.intellij.clouds.kubernetes.db.enabled" value="false" />
+        <property name="com.intellij.clouds.kubernetes.db.resource.type" value="Deployment" />
+        <property name="com.intellij.clouds.kubernetes.db.container.port" />
+      </jdbc-additional-properties>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+    <data-source source="LOCAL" name="MongoAtlas" uuid="c921bd64-fdc5-4174-8c13-49b051a53a9a">
+      <driver-ref>mongo</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.dbschema.MongoJdbcDriver</jdbc-driver>
+      <jdbc-url>mongodb+srv://cluster0.kui1t.mongodb.net/?retryWrites=true&amp;w=majority&amp;appName=Cluster0</jdbc-url>
       <jdbc-additional-properties>
         <property name="com.intellij.clouds.kubernetes.db.host.port" />
         <property name="com.intellij.clouds.kubernetes.db.enabled" value="false" />
